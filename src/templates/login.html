@@ -5,22 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/login.css') }}">
 </head>
 <body>
-    <div class = "container">
-        <div class = "signup-section">
+    <div class="container">
+        <div class="signup-section">
             <header>Signup</header>
             <div class="social-buttons">
-                <button><i class='bx bxl-google'></i>
-                Use Google</button>
-                <button><i class="bx bxl-github"></i>
-                Use Github</button>
+                <button><i class='bx bxl-google'></i> Use Google</button>
+                <button><i class="bx bxl-github"></i> Use Github</button>
             </div>
 
             <div class="separator">
                 <div class="line"></div>
-                    <p>or</p>
+                <p>or</p>
                 <div class="line"></div>
             </div>
 
@@ -33,14 +31,11 @@
             </form>
         </div>
 
-
-        <div class = "login-section">
+        <div class="login-section">
             <header>Login</header>
             <div class="social-buttons">
-                <button><i class='bx bxl-google'></i>
-                Use Google</button>
-                <button><i class="bx bxl-github"></i>
-                Use Github</button>
+                <button><i class='bx bxl-google'></i> Use Google</button>
+                <button><i class="bx bxl-github"></i> Use Github</button>
             </div>
 
             <div class="separator">
@@ -57,6 +52,9 @@
             </form>
         </div>
     </div>
-    <script src="../script.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}">
+        
+
+    </script>
 </body>
 </html>
