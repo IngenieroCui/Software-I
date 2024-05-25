@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/signup</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/login.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="signup-section">
+            <header>Signup</header>
+            <div class="social-buttons">
+                <button><i class='bx bxl-google'></i> Use Google</button>
+                <button><i class="bx bxl-github"></i> Use Github</button>
+            </div>
+
+            <div class="separator">
+                <div class="line"></div>
+                <p>or</p>
+                <div class="line"></div>
+            </div>
+
+            <form>
+                <input type="text" id = "signup-name" placeholder="Full name" required>
+                <input type="email" id = "signup-email" placeholder="Email address" required>
+                <input type="password" id = "signup-password" placeholder="password" required>
+                <a href="#">Forget Password</a>
+                <button type="submit" class="btnSign">signup</button>
+            </form>
+        </div>
+
+        <div class="login-section">
+            <header>Login</header>
+            <div class="social-buttons">
+                <button><i class='bx bxl-google'></i> Use Google</button>
+                <button><i class="bx bxl-github"></i> Use Github</button>
+            </div>
+
+            <div class="separator">
+                <div class="line"></div>
+                <p>or</p>
+                <div class="line"></div>
+            </div>
+
+            <form>
+                <input type="email" placeholder="Email address" required>
+                <input type="password" placeholder="password" required>
+                <a href="#">Forget Password</a>
+                <button type="submit" class="btnLog">Login</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -138,7 +138,7 @@ form a{
     color: #fff;
 }
 
-form .btn{
+form .btnSign{
     margin-top: 15px;
     border: none;
     padding: 10px 15px;
@@ -148,7 +148,23 @@ form .btn{
     cursor: pointer;
 }
 
-.login-section .btn{
+.login-section .btnSign{
+    background: #303f9f;
+    color: #fff;
+    border: none;
+}
+
+form .btnLog{
+    margin-top: 15px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login-section .btnLog{
     background: #303f9f;
     color: #fff;
     border: none;
