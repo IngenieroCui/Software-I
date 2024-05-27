@@ -28,9 +28,6 @@ def home():
 def login_page():
     return render_template("data.html")
 
-@app.route("/tienda")
-def tienda():
-    return render_template("tienda.html")
 
 @app.route("/carrito")
 def carrito():
@@ -72,6 +69,18 @@ def login():
             return jsonify({'message': 'Login successful!'}), 200
         else:
             return jsonify({'message': 'Invalid email or password'}), 401
+    except mysql.connector.Error as err:
+        print(f"Error: {err}")
+        return jsonify({'message': f'Error: {err}'}), 500
+
+@app.route("/api/productos", methods=['GET'])
+def get_productos():
+    try:
+        sql = "SELECT * FROM productos"
+        mycursor.execute(sql)
+        productos = mycursor.fetchall()
+        productos_list = [{'id': prod[0], 'nombre': prod[1], 'precio': prod[5]} for prod in productos]
+        return jsonify(productos_list), 200
     except mysql.connector.Error as err:
         print(f"Error: {err}")
         return jsonify({'message': f'Error: {err}'}), 500

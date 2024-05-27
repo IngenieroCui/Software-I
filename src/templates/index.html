@@ -1,20 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nature’s Bohm</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+	<script src="{{ url_for('static', filename='productos.js') }}" defer></script>
+	<script src="{{ url_for('static', filename='cartService.js') }}" defer></script>
+	<script src="{{ url_for('static', filename='index.js') }}" defer></script>
+	<title>Nature's bohm</title>
 </head>
 <body>
-    <header>
-        <h1 align = center>Hola</h1>
-    </header>
-    <nav>
-        <a href="{{ url_for('login_page') }}">Inicio</a>  <a href="{{ url_for('home') }}">Iniciar sesión</a> 
-    </nav>
-    
-
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde alias quia iste laudantium eius, repellat quo deleniti assumenda sit esse quibusdam placeat. Sunt, aspernatur labore. Ducimus laborum rerum asperiores deleniti!</p>
-    
+	<header>
+		<nav>
+			<a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/iconos/loguito.png') }}" alt="logo" id="logo"></a>
+			<div>
+				<a href="{{ url_for('login_page') }}">Login</a>
+				<a href="{{ url_for('carrito') }}" id="cart"><img src="{{ url_for('static', filename='images/iconos/carros.png') }}" alt=""><span id="cuenta-carrito">0</span></a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section id="productos-container">
+		</section>
+	</main>
 </body>
 </html>
