@@ -1,0 +1,25 @@
+PAGINA WEB SOFTWARE
+1.Mejorar la pagina web
+2.Diagrama de Casos de Uso + Historias de Usuario
+3.Diagrama de Secuencia
+4.Diagrama de Clases
+5.Diagrama de Comunicación
+6.Diagrama de Despliegue (si aplica), con alguna herramienta CASE.
+
+Team:
+Julio David Suarez Olaya(front end, product owner)
+Juan David Reyes Cure(Full stack)
+Sebastian Felipe Solano Cabrera(Scrum master, designer)
+
+A mejorar o cambiar:
+1. Cambio de pagina principal(diseño). 
+2. Mejorar carrito de compras(diseño) y añadir funcionalidad de compra.
+3. Pasar de flash a django.
+4. Añadir metodo de pago.
+5. Mejorar la seguridad de la pagina
+6. Pagina distinta de compra, pagina distinta para factura, descarga de factura.
+7. Cada producto tenga su propia pagina.
+8. Barra de busqueda(conseguir fotos). 
+9. Añadir mas productos.
+10. Cambiar la base de datos y añadir productos.
+11. Modificar diagramas.
